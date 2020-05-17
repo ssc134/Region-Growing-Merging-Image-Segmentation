@@ -2,7 +2,7 @@
 This script is for detection of light/bright objects in dark background.
 It does not work as intended yet.
 
-After running the script, double left click on any object you want to segment ans press 'esc'.
+After running the script, double left click on any object you want to segment and press 'esc'.
 The double clicked pixel coordinates will be generated and it will start flood_fill algo using the pixel merging criteria
 from the function mergeCriteriaMet().
 
