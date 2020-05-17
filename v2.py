@@ -1,6 +1,14 @@
 '''
-Trying to invert the image so that object to be segmented is always bright and background dark
-Decision pending
+This script is for detection of light/bright objects in dark background.
+It does not work as intended yet.
+
+After running the script, double left click on any object you want to segment ans press 'esc'.
+The double clicked pixel coordinates will be generated and it will start flood_fill algo using the pixel merging criteria
+from the function mergeCriteriaMet().
+
+Presently script works fine, except merging criteria needs to be improved.
+
+The test image 'coins.jpg' is available in the project repo.
 '''
 
 import cv2
@@ -101,6 +109,6 @@ for i in range(img2.shape[0]):
         if img2[i, j] == -1:
             img2[i, j] = 0
 
-cv2.imshow("new image", img2)
+cv2.imshow("segmented image", img2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
