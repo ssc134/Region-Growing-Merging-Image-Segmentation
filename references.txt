@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/23596511/how-to-save-mouse-position-in-variable-using-opencv-and-python
